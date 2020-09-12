@@ -1,0 +1,12 @@
+syntax="proto3";
+
+message Number
+{
+	 float value = 1;
+	
+}
+
+service Code
+{
+	rpc code(Number) returns (Number){ }
+}
